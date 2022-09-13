@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light to Dark Mode</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root {
+  --primary-bg-color: #eee;
+  --secondary-bg-color: #fff;
+  --primary-text-color: #666;
+  --secondary-text-color: #999;
+}
+
+body.active {
+  --primary-bg-color: #222;
+  --secondary-bg-color: #333;
+  --primary-text-color: #fff;
+  --secondary-text-color: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s linear;
+}
+
+body {
+  background: var(--primary-bg-color);
+}
+
+.container {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .content {
+  width: 400px;
+  background: var(--secondary-bg-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .content p {
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+
+#theme-toggler {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  padding: 15px 20px;
+  font-size: 30px;
+  background: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="theme-toggler" class="fas fa-moon"></div>
+    <div class="container">
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quo quaerat nobis
+          incidunt vel molestiae odio velit autem. Impedit, consequuntur!
+        </p>
+      </div>
+    </div>
+    <script>
+      let themeToggler = document.getElementById('theme-toggler');
+
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+
+  if (themeToggler.classList.contains('fa-sun')) {
+    document.body.classList.add('active');
+  } else {
+    document.body.classList.remove('active');
+  }
+};
+
+    </script>
+    <i class="fa fa-home"></i>
+  </body>
+</html>

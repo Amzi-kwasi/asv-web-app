@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 id="myhtag"></h1>
+	<p id="myptag"></p>
+	<button onclick="window.print()">Take a print</button>
+<script type="text/javascript">
+	document.getElementById("myhtag").innerHTML = "Asvan Launcher";
+	document.getElementById("myptag").innerHTML ="We are happy to know you to be the best girl ever";
+</script>
+
+<script>
+	class Car{
+		constructor(name){
+			this.brand =name;
+		}
+		pres() {
+			return "I have a " + this.brand;
+		}
+	}
+
+	class Model extends Car {
+		constructor(name,mod){
+			super(name);
+			this.model = mod;
+		}
+		show() {
+			return this.pres() + ', it is a ' + this.model
+		}
+	}
+	const mycar = new Model("roce royce","Mustang");
+    document.write(mycar.show());
+</script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
