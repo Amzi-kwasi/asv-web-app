@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" type="text/css" href="css\asv.css">
+    <link rel="stylesheet" type="text/css" href="css/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+     <title>ASVL-Collections</title>
+
+     <style type="text/css">
+         @charset "UTF-8";
+/******* Bootstrap Theming ********/
+@import "https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap";
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #E45F4E;
+  --secondary: #262626;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #ffffff;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #848484;
+  background-color: #ffffff;
+}
+
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #848484;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+.btn:hover {
+  color: #848484;
+  text-decoration: none;
+}
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(228, 95, 78, 0.25);
+}
+.btn.disabled, .btn:disabled {
+  opacity: 0.65;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #3bb0de;
+  border-color: black;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3bb0de;
+  border-color: black;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #3bb0de;
+  border-color: #dd3722;
+  box-shadow: 0 0 0 0.2rem rgba(232, 119, 105, 0.5);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #E45F4E;
+  border-color: #E45F4E;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #dd3722;
+  border-color: #d23420;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(232, 119, 105, 0.5);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #262626;
+  border-color: #262626;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #131313;
+  border-color: #0d0d0d;
+}
+.btn-secondary:focus, .btn-secondary.focus {
+  color: #fff;
+  background-color: #131313;
+  border-color: #0d0d0d;
+  box-shadow: 0 0 0 0.2rem rgba(71, 71, 71, 0.5);
+}
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #fff;
+  background-color: #262626;
+  border-color: #262626;
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #0d0d0d;
+  border-color: #060606;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(71, 71, 71, 0.5);
+}
+
+
+     </style>
+</head>
+
+<body>
+    <div id="navbar">
+         <img src="img/logo.png" class="logo">
+         <m>Collections-<small style="color:green;">SpreadSheet</small></m>
+          <a style="color: blue; position: absolute; cursor: pointer; right: 0; top: 0;" onclick="alert('Saved Successfully')">Save</a>
+
+</div>
+
+<div id="google_translate_element"></div>
+        
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="navbarc" id="myNavbarc">
+ <a href="Asvannew.html" class="fa fa-home" title="Home"><br><small class="smaller">Home</small></a>
+        <a href="book.html" class="fa fa-book" title="offline learning"><br><small class="smaller">Library</small></a>
+        <a href="contact.html" class="fa fa-phone" title="contact"><br><small class="smaller">Contact</small></a>
+        <a href="techterms.html" class="fa fa-search-plus" title="search for"><br><small class="smaller">ITD</small></a>
+        <a href="collection.html" class="fa fa-clone act"  title="collection"><br><small class="smaller">Collections</small></a>
+    </div>
+    
+   
+<br>
+<br>
+
+ <div class="scrollmenu">
+        <a href="document.html">Document</a>
+        <a href="presentation.html">Presentation</a>
+         <a href="spreadsheet.html" class="scroact">SpreadSheet</a>
+        <a href="memo.html">Memo</a>
+        <a href="sales.html">Sales</a>
+        <a onclick="window.print()">Print page</a>
+       
+       </div>
+
+       <br>
+       <br>
+
+
+
+
+<div style="overflow-x:auto;">
+<table class="table">
+  <tr class="tr">
+    <th class="th">
+<t>A</t>
+</th>
+    <th class="th">
+<t>B</t>
+</th>
+    <th class="th">
+<t>C</t> </th>
+    <th class="th">
+<t>D</t></th>
+    <th class="th">
+<t>E</t></th>
+ <th class="th">
+<t>F</t> </th>
+<th class="th">
+<t>G</t> </th>
+<th class="th">
+<t>H</t> </th>
+<th class="th">
+<t>I</t> </th>
+<th class="th">
+<t>J</t> </th>
+<th class="th">
+<t>K</t> </th>
+
+</tr>
+
+
+ <tr>
+    <td class="td"><textarea type="text"  class="td-input" onblur="findTotal()"  name="A" id="A" onkeyup='saveValue(this);'></textarea>
+     </td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F" onkeyup='saveValue(this);'></textarea></td>
+
+     <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A2"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B2" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C2" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D2" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E2" onkeyup='saveValue(this);'></textarea></td>
+
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F2" onkeyup='saveValue(this);'></textarea></td>
+  
+  <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G2" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H2" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I2" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J2" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K2" onkeyup='saveValue(this);'></textarea></td>
+
+</tr>
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" id="A3" onkeyup='saveValue(this);' onblur="findTotal()"></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B3" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C3" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D3" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E3" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F3" onkeyup='saveValue(this);'></textarea></td>
+
+  <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G3" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H3" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I3" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J3" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K3" onkeyup='saveValue(this);'></textarea></td>
+</tr>
+
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" onblur="findTotal()" onkeyup='saveValue(this);' id="A4" name="A"></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B4" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C4" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D4" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E4" onkeyup='saveValue(this);'></textarea></td>
+
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F4" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G4" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H4" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I4" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J4" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K4" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A5"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B5" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C5" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D5" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E5" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F5" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G5" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H5" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I5" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J5" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K5" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A6"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B6" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C6" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D6" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E6" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F6" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G6" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H6" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I6" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J6" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K6" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A7"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B7" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C7" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D7" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E7" onkeyup='saveValue(this);'></textarea></td>
+
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F7" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G7" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H7" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I7" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J7" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K7" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A8"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B8" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C8" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D8" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E8" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F8" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G8" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H8" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I8" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J8" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K8" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A9"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B9" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C9" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D9" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E9" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F9" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G9" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H9" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I9" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J9" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K9" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A10"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B10" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C10" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D10" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E10" onkeyup='saveValue(this);'></textarea></td>
+
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F10" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G10" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H10" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I10" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J10" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K10" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A11"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B11" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C11" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D11" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E11" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F11" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G11" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H11" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I11" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J11" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K11" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A12"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B12" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C12" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D12" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E12" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F12" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G12" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H12" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I12" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J12" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K12" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A13"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B13" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C13" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D13" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E13" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F13" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G13" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H13" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I13" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J13" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K13" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+  
+   <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A14"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B14" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C14" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D14" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E14" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F14" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G14" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H14" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I14" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J14" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K14" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A15"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B15" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C15" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D15" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E15" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F15" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G15" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H15" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I15" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J15" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K15" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A16"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B16" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C16" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D16" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E16" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F16" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G16" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H16" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I16" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J16" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K16" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A17"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B17" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C17" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D17" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E17" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F17" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G17" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H17" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I17" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J17" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K17" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A18"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B18" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C18" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D18" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E18" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F18" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G18" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H18" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I18" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J18" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K18" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A19"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B19" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C19" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D19" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E19" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F19" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G19" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H19" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I19" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J19" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K19" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A20"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B20" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C20" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D20" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E20" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F20" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G20" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H20" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I20" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J20" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K20" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A21"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B21" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C21" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D21" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E21" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F21" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G21" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H21" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I21" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J21" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K21" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A22"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B22" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C22" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D22" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E22" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F22" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G22" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H22" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I22" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J22" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K22" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A23"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B23" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C23" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D23" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E23" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F23" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G23" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H23" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I23" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J23" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K23" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+<tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A24"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B24" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C24" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D24" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E24" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F24" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G24" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H24" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I24" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J24" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K24" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A25"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B25" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C25" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D25" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E25" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F25" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G25" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H25" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I25" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J25" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K25" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A26"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B26" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C26" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D26" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E26" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F26" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G26" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H26" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I26" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J26" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K26" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A27"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B27" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C27" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D27" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E27" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F27" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G27" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H27" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I27" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J27" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K27" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A28"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B28" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C28" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D28" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E28" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F28" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G28" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H28" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I28" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J28" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K28" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A29"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B29" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C29" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D29" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E29" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F29" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G29" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H29" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I29" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J29" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K29" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+
+
+  <tr>
+    <td class="td"><textarea type="text" class="td-input" name="A" onblur="findTotal()"  id="A30"  onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findSol()"  name="B" id="B30" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findC()"  name="C" id="C30" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findD()"  name="D" id="D30" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findE()"  name="E" id="E30" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findF()"  name="F" id="F30" onkeyup='saveValue(this);'></textarea></td>
+
+    <td class="td"><textarea type="text"  class="td-input" onblur="findG()"  name="G" id="G30" onkeyup='saveValue(this);'></textarea></td>
+
+      <td class="td"><textarea type="text"  class="td-input" onblur="findH()"  name="H" id="H30" onkeyup='saveValue(this);'></textarea></td>
+
+       <td class="td"><textarea type="text"  class="td-input" onblur="findI()"  name="I" id="I30" onkeyup='saveValue(this);'></textarea></td>
+
+        <td class="td"><textarea type="text"  class="td-input" onblur="findJ()"  name="J" id="J30" onkeyup='saveValue(this);'></textarea></td>
+
+         <td class="td"><textarea type="text"  class="td-input" onblur="findK()"  name="K" id="K30" onkeyup='saveValue(this);'></textarea></td>
+  </tr>
+
+</table>
+
+</div>
+  <br><br>
+
+        
+     <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+</div> 
+
+
+
+           
+ <a href="#" class="btn btn-secondary border back-to-top" title="scroll to top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+   <script src="js/main.js"></script>
+   <script src="lib/easing/easing.js"></script>
+   
+    <script src="js/dark.js"></script>
+    <script src="js/excel.js"></script><script src="js/scroll.js"></script>
+
+   </body>
+   </html>

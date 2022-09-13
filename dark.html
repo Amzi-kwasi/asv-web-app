@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+
+  <style>
+#darkmodemenu {
+  position:absolute;
+  top:40px;
+  right:16px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+</style>
+
+<style>
+.topnavmain_pro {
+  background-color:#282A35;
+  color:#fff;
+}
+body.darkpagetheme .topnavmain_pro {
+  background-color:#fff;
+  color:#000;
+}
+@media screen and (max-width: 1160px) {
+  .ws-hide-1160 {
+    display: none !important;
+  }
+}
+</style>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darktheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkpage");
+  }
+})();
+</script>
+</head>
+<body>
+
+<div style='display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#282A35;text-align:right;padding-top:9px;' id='google_translate_element'></div>
+
+<div class='w3-card-2 topnav notranslate' id='topnav'>
+  <div style="overflow:auto;">
+    <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
+     
+      <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()" onclick='changepagetheme(2)'>&#xe80b;</a>
+
+
+      <!--
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>EXERCISES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+      -->
+      
+    </div>
+    
+<div id="darkmodemenu" class="ws-black" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()">
+<input id="radio_darkpage" type="checkbox" name="radio_theme_mode" onclick="click_darkpage()"><label for="radio_darkpage"> Dark mode</label>
+<br>
+<input id="radio_darkcode" type="checkbox" name="radio_theme_mode" onclick="click_darkcode()"><label for="radio_darkcode"> Dark code</label>
+</div>
+
+</body>
+</html>

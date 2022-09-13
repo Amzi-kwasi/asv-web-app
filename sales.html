@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/asv.css">
+    <link rel="stylesheet" type="text/css" href="css/dark.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>ASVL-Collections</title>
+</head>
+<style>
+@charset "UTF-8";
+/******* Bootstrap Theming ********/
+@import "https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap";
+
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twe/bootstrap/blob/main/LICENSE)
+ */
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #E45F4E;
+    --secondary: #262626;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #ffffff;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Raleway", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #848484;
+    background-color: #ffffff;
+}
+
+.input-container input {
+    border: none;
+    box-sizing: border-box;
+    outline: 0;
+    padding: .75rem;
+    position: relative;
+    width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: aeolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+
+.ft-legal {
+    padding: 5px;
+    background: linear-gradient(90deg, whitesmoke, #262626, whitesmoke, #262626, whitesmoke);
+    ;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    width: 100%;
+
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    0% {
+        background-position: 500% 0;
+    }
+
+}
+
+.ft-p {
+    text-align: center;
+    color: gold;
+}
+
+
+
+.textarea {
+    background-color: lightgrey;
+}
+</style>
+<style type="text/css">
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td,
+.th {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.th-input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.td-input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+
+
+
+label {
+    width: 100px;
+    float: left;
+    padding-top: 20px;
+}
+
+.form-control {
+    width: 200px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+fieldset {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 3px;
+    border: 1px solid lightgrey;
+    width: 30px;
+    margin: auto;
+}
+
+.month-input {
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input[type="date"] {
+    background-color: white;
+    color: black;
+    padding: 8px;
+}
+</style>
+
+<body>
+    <div id="navbar">
+        <img src="img/logo.png" class="logo">
+        <m>Collections-<small style="color:green;">Sales</small></m>
+        <a style="color: blue; position: absolute; cursor: pointer; right: 0; top: 0;" onclick="alert('Saved Successfully')">Save</a>
+    </div>
+
+    <div id="google_translate_element"></div>
+        
+
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="navbarc" id="myNavbarc">
+        <a href="Asvannew.html" class="fa fa-home" title="Home"><br><small class="smaller">Home</small></a>
+        <a href="book.html" class="fa fa-book" title="offline learning"><br><small class="smaller">Library</small></a>
+        <a href="contact.html" class="fa fa-phone" title="contact"><br><small class="smaller">Contact</small></a>
+        <a href="techterms.html" class="fa fa-search-plus" title="search for"><br><small class="smaller">ITD</small></a>
+        <a href="collection.html" class="fa fa-clone act" title="collection"><br><small class="smaller">Collections</small></a>
+    </div>
+    <br>
+    <br>
+    <div class="scrollmenu">
+        <a href="document.html">Document</a>
+        <a href="presentation.html">Presentation</a>
+        <a href="spreadsheet.html">SpreadSheet</a>
+        <a href="memo.html">Memo</a>
+        <a href="sales.html" class="scroact">Sales</a>
+        <a onclick="window.print()">Print page</a>
+    </div>
+    <input type="text" id="txt_1" onkeyup='saveValue(this);' placeholder="MONTH" class="month-input" />
+    <br><br>
+    <table class="table">
+        <tr class="tr">
+            <th class="th">
+                <input type="text" id="th_1" onkeyup='saveValue(this);' placeholder="Item_1" class="th-input" />
+            </th>
+            <th class="th">
+                <input type="text" id="th_2" onkeyup='saveValue(this);' placeholder="Item_2" class="th-input" />
+            </th>
+            <th class="th">
+                <input type="text" id="th_3" onkeyup='saveValue(this);' placeholder="Item_3" class="th-input" /> </th>
+            <th class="th">
+                <input type="text" id="th_4" onkeyup='saveValue(this);' placeholder="Item_4" class="th-input" /> </th>
+            <th class="th">
+                <input type="text" id="th_5" onkeyup='saveValue(this);' placeholder="Item_5" class="th-input" /> </th>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" onblur="findTotal()" name="c0l-a" id="c0l-a" onkeyup='saveValue(this);' />
+            </td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a2" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b2" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c2" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d2" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e2" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" id="c0l-a3" onkeyup='saveValue(this);' onblur="findTotal()"></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b3" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c3" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d3" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e3" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" onblur="findTotal()" onkeyup='saveValue(this);' id="c0l-a4" name="c0l-a"></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b4" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c4" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d4" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e4" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a5" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b5" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c5" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d5" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e5" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a6" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b6" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c6" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d6" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e6" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a7" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b7" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c7" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d7" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e7" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a8" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b8" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c8" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d8" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e8" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a9" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b9" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c9" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d9" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e9" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a10" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b10" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c10" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d10" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e10" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a11" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b11" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c11" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d11" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e11" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a12" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b12" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c12" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d12" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e12" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a13" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b13" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c13" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d13" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e13" onkeyup='saveValue(this);' /></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="td-input" name="c0l-a" onblur="findTotal()" id="c0l-a14" onkeyup='saveValue(this);'></td>
+            <td><input type="number" class="td-input" onblur="findSol()" name="col-b" id="col-b14" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findc()" name="c" id="c14" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="findd()" name="d" id="d14" onkeyup='saveValue(this);' /></td>
+            <td><input type="number" class="td-input" onblur="finde()" name="e" id="e14" onkeyup='saveValue(this);' /></td>
+        </tr>
+    </table>
+    <br><br>
+    
+    <form>
+        <fieldset>
+            <input type="text" id="tot-inp" onkeyup='saveValue(this);' placeholder="MONTH" class="month-input" />
+            <legend>Total_Sales</legend>
+            <div class="form-group">
+                <label>Item_1</label>
+                <input type="number" name="total" id="c0l-a-total" class="form-control prc" />
+            </div>
+            <div class="form-group">
+                <label>Item_2</label>
+                <input type="number" name="total" id="col-b-total" class="form-control prc" />
+            </div>
+            <div class="form-group">
+                <label>Item_3</label>
+                <input type="number" name="total" id="c-total" class="form-control prc" />
+            </div>
+            <div class="form-group">
+                <label>Item_4</label>
+                <input type="number" name="total" id="d-total" class="form-control prc" />
+            </div>
+            <div class="form-group">
+                <label>Item_5</label>
+                <input type="number" name="total" id="e-total" class="form-control prc" />
+            </div>
+        </fieldset>
+    </form>
+    <br><br>
+    <footer>
+        <section class="ft-legal">
+            <p class="ft-p">Designed by <em><b>ASVAN-LAUNCHER</b></em></p>
+        </section>
+    </footer>
+    <br>
+    <br>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <script src="js/dark.js"></script>
+    <script src="js/scroll.js"></script>
+<script src="js/sale.js"></script>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  
+.smoke-section{
+  height: 100vh;
+  background: #000;
+}
+
+
+video{
+  object-fit: cover;
+}
+
+.smoke-h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  
+}
+
+.smoke-h1 span {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0%
+  {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
+  }
+}
+
+
+.smoke-h1 span:nth-child(1)
+{
+  animation-delay: 1s;
+}
+
+.smoke-h1 span:nth-child(2)
+{
+  animation-delay: 1.3s;
+}
+.smoke-h1 span:nth-child(3)
+{
+  animation-delay: 1.5s;
+}
+.smoke-h1 span:nth-child(4)
+{
+  animation-delay: 1.7s;
+}
+.smoke-h1 span:nth-child(5)
+{
+  animation-delay: 1.9s;
+}
+.smoke-h1 span:nth-child(6)
+{
+  animation-delay: 2s;
+}
+.smoke-h1 span:nth-child(7)
+{
+  animation-delay: 2.3s;
+}
+.smoke-h1 span:nth-child(8)
+{
+  animation-delay: 2.5s;
+}
+.smoke-h1 span:nth-child(9)
+{
+  animation-delay: 2.7s;
+}
+.smoke-h1 span:nth-child(10)
+{
+  animation-delay: 2.9s;
+}
+.smoke-h1 span:nth-child(11)
+{
+  animation-delay: 3s;
+}
+.smoke-h1 span:nth-child(12)
+{
+  animation-delay: 3.3s;
+}
+.smoke-h1 span:nth-child(13)
+{
+  animation-delay: 3.5s;
+}
+.smoke-h1 span:nth-child(14)
+{
+  animation-delay: 3.7s;
+}
+</style>
+</head>
+<body onload="myViews()" style="margin:0;">
+
+<div id="loader">
+  <section class="smoke-section">
+    <video src="video/smoke.mp4" autoplay muted></video>
+    <h1 class="smoke-h1"> 
+    <span style="color: red;">A</span>
+    <span style="color:yellow;">S</span>
+    <span style="color:green;">V</span>
+    <span style="color:blue;">A</span>
+    <span style="color:orange;">N</span>
+    <span style="color:yellow;">-</span>
+    <span style="color:red;">L</span>
+    <span style="color:green;">A</span>
+    <span style="color:skyblue;">U</span>
+    <span style="color: purple;">N</span>
+    <span style="color:yellow;">C</span>
+    <span style="color:blue;">H</span>
+    <span style="color:pink;">E</span>
+    <span>R</span>
+    </h1>
+  </section>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p>
+</div>
+
+<script>
+var myVar;
+
+function myViews() {
+  myVar = setTimeout(showPage, 7000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

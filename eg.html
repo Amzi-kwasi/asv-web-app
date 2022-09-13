@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<title></title>
+</head>
+<body>
+<h2>We <span class="auto-input"></span></h2>
+                <script src="https://cdn.jsdeliver.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-input", {
+                        strings: ["are professionals in Web Designs"],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        loop: true
+                    })
+                </script>
+
+
+                <FORM STYLE="padding-left:5px">
+<INPUT TYPE="checkbox" ID="BoxName1" ONCLICK="ShowCheckboxDiv('BoxName', 3)"/>Show section 1<BR>
+<INPUT TYPE="checkbox" ID="BoxName2" ONCLICK="ShowCheckboxDiv('BoxName', 3)"/>Show section 2<BR>
+<INPUT TYPE="checkbox" ID="BoxName3" ONCLICK="ShowCheckboxDiv('BoxName', 3)"/>Show section 3<BR>
+</FORM>
+
+    <script>
+function ShowCheckboxDiv (IdBaseName, NumberOfBoxes) {
+    for (x=1;x<=NumberOfBoxes;x++) {
+        CheckThisBox = IdBaseName + x;
+        BoxDiv = IdBaseName + x +'Div';
+    if (document.getElementById(CheckThisBox).checked) {
+        document.getElementById(BoxDiv).style.display = "block";
+        }
+    else {
+        document.getElementById(BoxDiv).style.display = "none";
+        }
+    }
+    return false;
+}
+</script>
+
+<div id="BoxName1Div" style="display:none;">Section 1</div>
+<div id="BoxName2Div" style="display:none;">Section 2</div>
+<div id="BoxName3Div" style="display:none;">Section 3</div>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+    const fruits ={
+        fruit: 'apple',
+        color: 'green'
+        size: 'small'
+    }
+
+    myNiceFr(fruits);
+
+
+    function myNiceFr({fruit,color,size}) {
+        const amzi = 'Wow this ' + fruit + ' is very ' + size + ' and has a sour taste but it is ' + color + 'in color.';
+
+        document.getElementById('demo').innerHTML = amzi ;
+    }
+</script>
+</body>
+</html>

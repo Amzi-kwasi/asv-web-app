@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/asv.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+</style>
+</head>
+<body>
+ <div class="navbarc" id="myNavbarc">
+        <a href="Asvannew.html" class="fa fa-home act" title="Home"><br><small class="smaller">Home</small></a>
+        <a href="book.html" class="fa fa-book" title="offline learning"><br><small class="smaller">Library</small></a>
+        <a href="contact.html" class="fa fa-phone" title="contact"><br><small class="smaller">Contact</small></a>
+        <a href="techterms.html" class="fa fa-search-plus" title="search for"><br><small class="smaller">IT Dic</small></a>
+        <a href="collection.html" class="fa fa-clone" title="collection"><br><small class="smaller">Collections</small></a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myBottom()">&#9776;</a>
+    </div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Bottom Navbar Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+function myBottom() {
+  var x = document.getElementById("myNavbarc");
+  if (x.className === "navbarc") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbarc";
+  }
+}
+</script>
+
+</body>
+</html>
